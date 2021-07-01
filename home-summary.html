@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Schole</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./js/index.css">
+  <script src="./js/index.js"></script>
+  
+  
+</head>
+
+<body>
+  <div class="ui tablet computer only padded grid">
+    <div class="ui borderless top fixed fluid menu">
+      <a class="header item">
+        S C H O L E
+      </a>
+      <div class="menu">
+        <a class="active item">Home</a>
+        <a class="item">Projects</a>
+        <a class="item">Messages</a>
+        <a class="item">People</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="ui padded grid">
+    <div class="three wide tablet only two wide computer only column" id="sidebar">
+      <div class="ui vertical borderless fluid text menu">
+        <a class="item" id="avatar" style="vertical-align: middle; height: 70px;">
+          <img class="ui mini circular image" style="display: inline-block;" src="./img/patrick.png">
+          <div class="content" style="display: inline-block; padding-left: 10px;">
+            <div class="ui sub header">Elyse</div>
+            Developer
+          </div>
+      </a>
+        <a class="active item"><i class="left home icon"></i>Summary</a>
+        <a class="item" href="./home-mytask.html"><i class="left tasks icon"></i>My Tasks</a>
+        <a class="item"><i class="left envelope icon"></i>Messages</a>
+        <div class="ui hidden divider"></div>
+        <a class="item"><i class="left sign out alternate icon"></i>Sign Out</a>
+      </div>
+    </div>
+    <div class="thirteen wide tablet eight wide computer right floated column" id="content">
+      <div class="ui padded grid">
+        <!-- Assignment -->
+        <div class="row">
+          <h4 class="ui huge dividing header">Assignment</h4>
+        </div>
+        <div class="row">
+          <div class="ui cards">
+            <div class="card">
+              <div class="content">
+                <div class="header">Design Exercise IIB</div>
+                <div class="meta">UI/UX</div>
+                <div class="description">
+                  Unity Game
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <div class="header">Design Exercise IIA</div>
+                <div class="meta">Product Design</div>
+                <div class="description">
+                  Design a portable LED lamp
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <div class="header">Design Practice IIB</div>
+                <div class="meta">Project</div>
+                <div class="description">
+                  Design Project tackling SDGs Goals
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ui hidden divider"></div>
+
+        <!-- My Group Task -->
+        <div class="row">
+          <h4 class="ui huge dividing header">My Group Tasks</h4>
+        </div>
+        <div class="row">
+          <table class="ui celled table">
+            <thead>
+              <tr><th>Name</th>
+              <th>Status</th>
+              <th>Task</th>
+            </tr></thead>
+            <tbody>
+              <tr>
+                <td>John</td>
+                <td><div class="ui yellow label">Submitted</div></td>
+                <td>Complete Wireframe for Phone size</td>
+              </tr>
+              <tr>
+                <td>Jamie</td>
+                <td><div class="ui yellow label">Submitted</div></td>
+                <td>Complete Planning Sheet</td>
+              </tr>
+              <tr>
+                <td>Jill</td>
+                <td><div class="ui green label">Approved</div></td>
+                <td>Subtitle for planning video</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="two wide computer only centered column" id="content2">
+      <div class="ui padded row">
+        <div class="ui calendar" id="inline_calendar">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  </div>
+
+
+</body>
+
+</html>

@@ -32,10 +32,26 @@
     color: #23527c;
   }
 
+  #sidebar .ui.menu > a#avatar {
+    padding: 10px 20px;
+    line-height: 20px;
+    color: #337ab7;
+    border-radius: 0 !important;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+
   #content {
     padding-top: 56px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  #content2 {
+    padding-top: 75px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   #content h1 {
