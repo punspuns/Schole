@@ -88,3 +88,11 @@
   margin-left: 10px;
   width: 300px;
 }
+
+.ui.card .header {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
