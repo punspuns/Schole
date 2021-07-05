@@ -23,10 +23,9 @@
       </a>
       <div class="menu">
 
-        <a class="active item">Home</a>
-        <a class="item">Projects</a>
-        <a class="item">Messages</a>
-        <a class="item">People</a>
+        <a class="active item" href="./home-summary.html">Home</a>
+        <a class="item" href="./prj-timeline.html">Projects</a>
+        <a class="item" href="./people.html">People</a>
 
       </div>
 
@@ -35,6 +34,7 @@
 
 
   <div class="ui padded grid">
+    <div class="row">
     <div class="three wide tablet only two wide computer only column" id="sidebar">
       <div class="ui vertical borderless fluid text menu">
         <a class="item" id="avatar" style="vertical-align: middle; height: 70px;">
@@ -51,69 +51,10 @@
         <a class="item"><i class="left sign out alternate icon"></i>Sign Out</a>
       </div>
     </div>
-    <div class="thirteen wide tablet eight wide computer right floated column" id="content">
+    <div class="thirteen wide tablet eight wide computer column" id="content">
       <div class="ui hidden divider"></div>
 
-      <!-- This week's task -->
-      <div class="row">
-        <h4 class="ui huge dividing header">This week's tasks</h4>
-      </div>
-
-      <div class="ui hidden divider"></div>
-
-      <div class="ui two column centered grid">
-        <div class="column">
-          <div class="ui teal progress" data-value="4" data-total="5" id="example1">
-            <div class="bar"></div>
-            <div class="label">Final Phase</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="ui hidden divider"></div>
-
-      <div class="row">
-        <table class="ui celled table">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Task</th>
-              <th>Deadline</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>John</td>
-              <td>Complete Wireframe for Phone size</td>
-              <td>12/12</td>
-              <td>
-                <div class="ui yellow label">Submitted</div>
-              </td>
-            </tr>
-            <tr>
-              <td>Jamie</td>
-              <td>Complete Planning Sheet</td>
-              <td>12/12</td>
-              <td>
-                <div class="ui yellow label">Submitted</div>
-              </td>
-            </tr>
-            <tr>
-              <td>Jill</td>
-              <td>Subtitle for planning video</td>
-              <td>12/12</td>
-              <td>
-                <div class="ui green label">Approved</div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-
-      </div>
-      <div class="ui hidden divider"></div>
-
-      <!-- Task box -->
+      <!-- Task Box-->
       <div class="row">
         <h4 class="ui huge dividing header">Task Box</h4>
       </div>
@@ -152,11 +93,15 @@
 
         <div class="card">
           <div class="content">
-            <div class="header">Digitalize Wireframe</div>
+            <div class="ui orange label right floated">
+              Revising
+            </div>
+            <div class="header">Digitalize Wireframe </div>
             <div class="meta">You</div>
             <div class="description">
               Digitalized version on Adobe XD.
-            </div>
+            </div><br>
+            
           </div>
           <div class="extra content">
             <div class="ui floating dropdown button">
@@ -176,23 +121,89 @@
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
         
       </div>
+
+      
+      <div class="ui hidden divider"></div>
+
+      <!-- Submission Status -->
+      <div class="row">
+        <h4 class="ui huge dividing header">Submission Status</h4>
+      </div>
+
+      <div class="ui hidden divider"></div>
+      <div class="ui two column centered grid">
+        <div class="column">
+          <div class="ui teal progress" data-value="4" data-total="5" id="example1">
+            <div class="bar"></div>
+            <div class="label">75% done</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui hidden divider"></div>
+
+      <div class="row">
+        <table class="ui celled table">
+          <thead>
+            <tr>
+              <th>Deadline</th>
+              <th>Task</th>
+              <th>Last Submission</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2020/12/12</td>
+              <td>Digitalize Wireframe</td>
+              <td>2020/12/11</td>
+              <td>
+                <div class="ui orange label">Revising</div>
+              </td>
+            </tr>
+            <tr>
+              <td>2020/12/12</td>
+              <td>Sketch Wireframe</td>
+              <td>2020/12/11</td>
+              <td>
+                <div class="ui yellow label">Submitted</div>
+              </td>
+            </tr>
+            <tr>
+              <td>2020/12/07</td>
+              <td>Subtitle for planning video</td>
+              <td>2020/12/06</td>
+              <td>
+                <div class="ui green label">Approved</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+      
       </div>
 
       <!-- Calendar-->
-      <div class="two wide computer only centered column" id="content2">
+      <div class="three wide computer only centered column" id="content2">
         <div class="ui padded row">
           <div class="ui calendar" id="inline_calendar">
           </div>
         </div>
 
+        
+
       </div>
+      
 
     </div>
-
+  </div>
   </div>
 
 

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Schole</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./js/projects.css">
+    <script src="./js/projects.js"></script>
+
+
+</head>
+
+<body>
+    <div class="ui tablet computer only padded grid">
+        <div class="ui borderless top fixed fluid menu">
+            <a class="header item">
+                S C H O L E
+            </a>
+            <div class="menu">
+                <a class="item" href="./home-summary.html">Home</a>
+                <a class="active item" href="./prj-timeline.html">Projects</a>
+                <a class="item" href="./people.html">People</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="ui padded grid">
+        <div class="row">
+            <div class="three wide tablet only two wide computer only column" id="sidebar">
+                <div class="ui vertical borderless fluid text menu">
+                    <a class="item" id="avatar">
+                        <img class="ui mini circular image" style="display: inline-block;" src="./img/patrick.png">
+                        Midoriya Izuku
+                    </a>
+                    <a class="active item"><i class="left stream icon"></i>Timeline</a>
+                    <a class="item" href="./home-mytask.html"><i class="left tasks icon"></i>Milestone</a>
+                    <a class="item"><i class="left columns icon"></i>Board</a>
+                    <div class="ui hidden divider"></div>
+                    <a class="item"><i class="left sign out alternate icon"></i>Sign Out</a>
+                </div>
+            </div>
+            <div class="thirteen wide tablet eight wide computer column" id="content">
+                <!-- Summary -->
+                <div class="padded row">
+                    <h4 class="ui huge dividing header">Summary</h4>
+                    <div class="ui hidden divider"></div>
+                    <div class="ui centered grid">
+                        <div class="ten wide column">
+                            <div class="ui multiple progress" data-percent="25,25,25,20" id="team-pr">
+                                <div class="blue bar">
+                                  <div class="progress"></div>
+                                </div>
+                                <div class="yellow bar">
+                                  <div class="progress"></div>
+                                </div>
+                                <div class="purple bar">
+                                  <div class="progress"></div>
+                                </div>
+                                <div class="green bar">
+                                  <div class="progress"></div>
+                                </div>
+                                <div class="label">Phase Progress</div>
+                              </div>
+                        </div>
+                        
+                        
+                      </div>
+                      <div class="ui hidden divider"></div><br><br>
+                      <div class="ui horizontal basic segments">
+                          <div class="ui segment">
+                            <div class="lines">
+                                <div class="dot" style="background: brown;"></div>
+                                <div class="line" style="background: brown;"></div>
+                                <div class="dot" style="background: brown;"></div>
+                                <div class="line" style="background: brown;"></div>
+                                <div class="dot" style="background: brown;"></div>
+                                <div class="line"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="ui cards" id="phases">
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="header">Phase 1</div>
+                                        <div class="meta">Ends: 2020/10/05</div>
+                                        <div class="description">
+                                          Planning and Role Division
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="header">Phase 2</div>
+                                        <div class="meta">Ends: 2020/10/25</div>
+                                        <div class="description">
+                                          Research and Build Plan
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="card">
+                                  <div class="content">
+                                    <div class="header">Phase 3</div>
+                                    <div class="meta">Ends: 2020/11/25</div>
+                                    <div class="description">
+                                      Implementation of technical matters
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card">
+                                    <div class="content">
+                                      <div class="header">Phase Final</div>
+                                      <div class="meta">Ends: 2020/12/25</div>
+                                      <div class="description">
+                                        Material Preparation and Final Judgement
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="ui segment" style="width: 50%;">
+                            <div class="ui cards" >
+                                <div class="ui card">
+                                    <a class="image" href="#">
+                                      <img src="/images/avatar/large/steve.jpg">
+                                    </a>
+                                    <div class="content">
+                                      <a class="header" href="#">Steve Jobes</a>
+                                      <div class="meta">
+                                        <a>Last Seen 2 days ago</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="ui card">
+                                    <a class="image" href="#">
+                                      <img src="/images/avatar/large/steve.jpg">
+                                    </a>
+                                    <div class="content">
+                                      <a class="header" href="#">Steve Jobes</a>
+                                      <div class="meta">
+                                        <a>Last Seen 2 days ago</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="ui card">
+                                    <a class="image" href="#">
+                                      <img src="/images/avatar/large/steve.jpg">
+                                    </a>
+                                    <div class="content">
+                                      <a class="header" href="#">Steve Jobes</a>
+                                      <div class="meta">
+                                        <a>Last Seen 2 days ago</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="ui card">
+                                    <a class="image" href="#">
+                                      <img src="/images/avatar/large/steve.jpg">
+                                    </a>
+                                    <div class="content">
+                                      <a class="header" href="#">Steve Jobes</a>
+                                      <div class="meta">
+                                        <a>Last Seen 2 days ago</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+
+                            </div>
+                            
+                          </div>
+                      </div>
+                      
+                </div>
+
+            </div>
+            <div class="three wide computer only centered column" id="content2">
+                <div class="ui padded row">
+                  <div class="ui calendar" id="inline_calendar">
+                  </div>
+                </div>
+        
+                
+        
+              </div>
+        </div>
+
+
+
+
+</body>
+
+</html>
