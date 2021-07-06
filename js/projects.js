@@ -23,4 +23,5 @@ $(document).ready(function () {
       $('#add-task').modal('show')
    })
    $('.tabular.menu .item').tab();
+   $('.ui.dropdown').dropdown();
 });
