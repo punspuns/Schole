@@ -144,31 +144,60 @@
                   <button class="ui primary button right floated" id="schedule">
                     Modify
                   </button>
-                  <div class="ui modal">
-                    <i class="close icon"></i>
+                  <!-- Schedule Modal -->
+                  <div class="ui modal padded" id="checklist">
                     <div class="header">
-                      Profile Picture
+                      Checklist
                     </div>
-                    <div class="image content">
-                      <div class="ui medium image">
-                        <img src="/images/avatar/large/chris.jpg">
-                      </div>
+                    <div class="content">
                       <div class="description">
-                        <div class="ui header">We've auto-chosen a profile image for you.</div>
-                        <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
-                        <p>Is it okay to use this photo?</p>
+                        <table class="ui celled table">
+                          <thead>
+                            <tr><th>Main Goal</th>
+                            <th>Tasks</th>
+                          </tr></thead>
+                          <tbody>
+                            <tr>
+                              <td data-label="Name"> Brainstorming</td>
+                              <td data-label="Age">Problems Brainstorming,Research,Solution Brainstorming</td>
+                            </tr>
+                            <tr>
+                              <td data-label="Name">Planning</td>
+                              <td data-label="Age">Solution Draft,Workflow Masterplan,Role Division</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <br>
+                        <div class="ui form">
+                          <div class="three fields">
+                            <div class="field">
+                              <label>Main Goal</label>
+                              <input type="text" placeholder="Brainstorming">
+                            </div>
+                            <div class="field">
+                              <label>Break Down Tasks (list with comma)</label>
+                              <input type="text" placeholder="Research, Discussion, Solution">
+                              
+                            </div>
+                            
+                          </div>
+                          <button class="ui blue button" type="submit"><i class="plus icon"></i>Add</button>
+                        </div>
                       </div>
+
                     </div>
+                      
+                    
                     <div class="actions">
                       <div class="ui black deny button">
-                        Nope
+                        Close
                       </div>
                       <div class="ui positive right labeled icon button">
-                        Yep, that's me
+                        Save
                         <i class="checkmark icon"></i>
                       </div>
                     </div>
-                  </div>
+                </div>
 
             </div>
             <div class="one wide column">
@@ -176,16 +205,131 @@
             </div>
             <div class="nine wide column">
                 <h5 class="ui huge header">Tasks</h5>
-                <div class="ui top attached tabular menu">
+                <div class="ui tabular menu">
+                    <a class="active item" data-tab="tab-name">
+                      Timeline
+                    </a>
+                    <a class="item" data-tab="tab-name2">
+                      Member
+                    </a>
+                    
+                    
+                  </div>
+                  <div class="ui secondary pointing menu">
                     <a class="active item">
-                      Bio
+                      Week 1
                     </a>
                     <a class="item">
-                      Photos
+                      Week 2
                     </a>
+                    <a class="item">
+                      Week 3
+                    </a>
+                    <div class="right menu">
+                      <a class="ui item">
+                        <i class="plus circle icon"></i> Add
+                      </a>
+                    </div>
                   </div>
-                  <div class="ui bottom attached segment">
-                    <p></p>
+                  <div class="ui tab" data-tab="tab-name" style="padding-left: 10px;">
+                    <table class="ui very basic table">
+                      <thead>
+                        <tr>
+                          <th>Task</th>
+                          <th>Deadline</th>
+                          <th>Member</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Research: Health Matter</td>
+                          <td>2020-12-07</td>
+                          <td><a class="ui image label">
+                            <img src="./img/katsuki-bakugo-64814.jpg">
+                            Bakugo
+                          </a></td>
+                        </tr>
+                        <tr>
+                          <td>Research: Health Solution</td>
+                          <td>2020-12-07</td>
+                          <td><a class="ui image label">
+                            <img src="./img/todoroki.jpg">
+                            Todoroki
+                          </a></td>
+                        </tr>
+                        <tr>
+                          <td>Research: Possible Ways</td>
+                          <td>2020-12-07</td>
+                          <td><a class="ui image label">
+                            <img src="./img/deku.jpg">
+                            Midoriya
+                          </a></td>
+                        </tr>
+                        <tr>
+                          <td><a id="task"><i class="plus icon"></i> Add more tasks...</a></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="ui modal" id="add-task">
+                      <div class="header">
+                        Add a Task
+                      </div>
+                      <div class="content">
+                        <div class="description">
+                          <form class="ui form">
+                            <div class="fields">
+                              <div class="field">
+                                <label>Task Name</label>
+                                <input type="text" name="first-name" placeholder="Task Name">
+                              </div>
+                              <div class="field">
+                                <label>In Charge</label>
+                                <select class="ui fluid dropdown">
+                                  <option value="1"><div class="ui image label"><img src="./img/katsuki-bakugo-64814.jpg">Bakugo</div></option>
+                                  <option value="2"><div class="ui image label"><img src="./img/todoroki.jpg">Todoroki</div></option>
+                                  <option value="3"><div class="ui image label"><img src="./img/deku.jpg">Midoriya</div></option>
+                                  </select>
+                              </div>
+                              <div class="field">
+                                <label>Deadline</label>
+                                <div class="ui calendar" id="task-cal">
+                                  <div class="ui input left icon">
+                                    <i class="calendar icon"></i>
+                                    <input type="text" placeholder="Pick up a date" name="date">
+                                  </div>        
+                                </div>
+                              </div>
+                            </div>
+                            <div class="field">
+                              <label>Task Summary</label>
+                              <input type="text" placeholder="Short Summary">
+                            </div>
+                            
+                            <div class="field">
+                              <label>Task Detail</label>
+                              <textarea></textarea>
+                            </div>
+                            
+                          </form>
+                        </div>
+                      </div>
+                      <div class="actions">
+                        <div class="ui black deny button">
+                          Cancel
+                        </div>
+                        <div class="ui positive right labeled icon button">
+                          Add
+                          <i class="checkmark icon"></i>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="ui tab" data-tab="tab-name2">
+                    <!-- Tab Content !-->
+                    <p>bbb</p>
                   </div>
             </div>
             

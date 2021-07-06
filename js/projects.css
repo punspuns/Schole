@@ -98,9 +98,6 @@
   transform: translateY(-50%);
 }
 
-.ui.list .list>.item:first-child, .ui.list>.item:first-child, ol.ui.list li:first-child, ul.ui.list li:first-child {
-  padding-top: 5px;
-}
 
 .ui.checkbox {
   padding-top: 10px;
