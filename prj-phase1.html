@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Schole</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.8/semantic.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./js/projects.css">
+  <script src="./js/projects.js"></script>
+
+
+</head>
+
+<body>
+  <div class="ui tablet computer only padded grid">
+    <div class="ui borderless top fixed fluid menu">
+      <a class="header item">
+        S C H O L E
+      </a>
+      <div class="menu">
+        <a class="item" href="./home-summary.html">Home</a>
+        <a class="active item" href="./prj-timeline.html">Projects</a>
+        <a class="item" href="./people.html">People</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="ui padded grid">
+    <div class="row">
+      <div class="three wide tablet only two wide computer only column" id="sidebar">
+        <div class="ui vertical borderless fluid text menu">
+          <a class="item" id="avatar">
+            <img class="ui mini circular image" style="display: inline-block;" src="./img/patrick.png">
+            Midoriya Izuku
+          </a>
+          <a class="active item"><i class="left stream icon"></i>Timeline</a>
+          <a class="item" href="./home-mytask.html"><i class="left tasks icon"></i>Milestone</a>
+          <a class="item"><i class="left columns icon"></i>Board</a>
+          <div class="ui hidden divider"></div>
+          <a class="item"><i class="left sign out alternate icon"></i>Sign Out</a>
+        </div>
+      </div>
+      <div class="thirteen wide tablet eight wide computer column" id="content">
+         <!-- Breadcrumb -->
+         <div class="padded row">
+            <div class="ui breadcrumb">
+              <a class="section">Projects</a>
+              <div class="divider"> / </div>
+              <a class="section">Summary</a>
+              <div class="divider"> / </div>
+              <div class="active section">Phase 1</div>
+            </div>
+            <h4 class="ui huge dividing header">Phase 1 <div class="ui red horizontal label">Completed</div></h4>
+            <div class="ui hidden divider"></div>
+            <div class="ui centered grid">
+              <div class="ten wide column">
+                <div class="ui multiple progress" data-percent="25,25,25,25" id="team-pr">
+                  <div class="blue bar">
+                    <div class="progress"></div>
+                  </div>
+                  <div class="yellow bar">
+                    <div class="progress"></div>
+                  </div>
+                  <div class="purple bar">
+                    <div class="progress"></div>
+                  </div>
+                  <div class="green bar">
+                    <div class="progress"></div>
+                  </div>
+                  <div class="label">Phase 1 Progress</div>
+                </div>
+              </div>
+            </div>
+            <div class="ui hidden divider"></div><br><br>
+            
+            
+
+        </div>
+        <div class="ui padded grid">
+            <!-- Checkbox -->
+            <div class="six wide column">
+                <h5 class="ui huge header">Checkbox</h5>
+                <div class="ui relaxed list">
+                    <div class="item">
+                      <div class="ui master checkbox">
+                        <input type="checkbox" name="fruits">
+                        <label>Brainstorming</label>
+                      </div>
+                      <div class="list">
+                        <div class="item">
+                          <div class="ui child checkbox">
+                            <input type="checkbox" name="apple">
+                            <label>Problems Brainstorming</label>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="ui child checkbox">
+                            <input type="checkbox" name="orange">
+                            <label>Research</label>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="ui child checkbox">
+                            <input type="checkbox" name="pear">
+                            <label>Solution Brainstorming</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="ui master checkbox">
+                        <input type="checkbox" name="vegetables">
+                        <label>Planning</label>
+                      </div>
+                      <div class="list">
+                        <div class="item">
+                          <div class="ui child checkbox">
+                            <input type="checkbox" name="lettuce">
+                            <label>Solution Draft</label>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="ui child checkbox">
+                            <input type="checkbox" name="carrot">
+                            <label>Workflow Masterplan</label>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="ui child checkbox">
+                            <input type="checkbox" name="spinach">
+                            <label>Role Division</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Change Schedule -->
+                  <button class="ui primary button right floated" id="schedule">
+                    Modify
+                  </button>
+                  <div class="ui modal">
+                    <i class="close icon"></i>
+                    <div class="header">
+                      Profile Picture
+                    </div>
+                    <div class="image content">
+                      <div class="ui medium image">
+                        <img src="/images/avatar/large/chris.jpg">
+                      </div>
+                      <div class="description">
+                        <div class="ui header">We've auto-chosen a profile image for you.</div>
+                        <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+                        <p>Is it okay to use this photo?</p>
+                      </div>
+                    </div>
+                    <div class="actions">
+                      <div class="ui black deny button">
+                        Nope
+                      </div>
+                      <div class="ui positive right labeled icon button">
+                        Yep, that's me
+                        <i class="checkmark icon"></i>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+            <div class="one wide column">
+
+            </div>
+            <div class="nine wide column">
+                <h5 class="ui huge header">Tasks</h5>
+                <div class="ui top attached tabular menu">
+                    <a class="active item">
+                      Bio
+                    </a>
+                    <a class="item">
+                      Photos
+                    </a>
+                  </div>
+                  <div class="ui bottom attached segment">
+                    <p></p>
+                  </div>
+            </div>
+            
+            
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
