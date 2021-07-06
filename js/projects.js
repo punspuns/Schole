@@ -15,7 +15,8 @@ $(document).ready(function () {
    $('#task-cal').calendar({
       type: 'date'
     });
-   $('.ui.checkbox').checkbox('set checked');
+   $('.ui.checkbox#phase1').checkbox('set checked');
+   $('.ui.checkbox#phase4').checkbox('set checked');
    $('#schedule').click(function () {
       $('#checklist').modal('show')
    })
