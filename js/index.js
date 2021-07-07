@@ -13,4 +13,7 @@ $(document).ready(function() {
      });
     $('#example1').progress();
     $('.ui.dropdown').dropdown();
+    $('#out').click(function () {
+        $('#sign-out').modal('show')
+     });
  });
