@@ -19,10 +19,19 @@ $(document).ready(function () {
    $('.ui.checkbox#phase4').checkbox('set checked');
    $('#schedule').click(function () {
       $('#checklist').modal('show')
-   })
+   });
    $('#task').click(function () {
       $('#add-task').modal('show')
-   })
+   });
+   $('.feedback').click(function () {
+      $('#feedback-modal').modal('show')
+   });
+   $('.update').click(function () {
+      $('#update-modal').modal('show')
+   });
+   $('.minutes').click(function () {
+      $('#minutes-modal').modal('show')
+   });
    $('.tabular.menu .item.task-tab').tab();
    $('.tabular.menu .item.box-tab').tab();
    $('.ui.dropdown').dropdown();

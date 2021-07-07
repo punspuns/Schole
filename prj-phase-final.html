@@ -424,14 +424,14 @@
                       <p>A document planning workflow</p>
                     </div>
                     <div class="extra">
-                      <div class="ui right floated primary button">
+                      <div class="ui right floated primary button minutes">
                         Modify
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="item">
-                  <a id="task"><i class="plus icon"></i> Add minutes</a>
+                  <a class="minutes"><i class="plus icon"></i> Add minutes</a>
                 </div>
 
               </div>
@@ -447,15 +447,15 @@
                       Content A
                     </div>
                     <div class="meta">
-                      Submitted: 2020-12-05 12:01 
+                      <span>3 days ago</span> <a>Todoroki </a>
                     </div>
                     <div class="description">
                       <p>A document planning workflow</p>
                     </div>
                     <div class="extra">
                       <div class="ui orange horizontal label">Revising</div>
-                      <div class="ui right floated primary button">
-                        Update
+                      <div class="ui right floated primary button feedback"> 
+                        Feedback
                       </div>
                     </div>
                   </div>
@@ -469,7 +469,7 @@
                       Content B
                     </div>
                     <div class="meta">
-                      Submitted: 2020-12-05 12:01 
+                      <span>3 days ago</span> <a>Bakugo </a>
                     </div>
                     <div class="description">
                       <p>A document planning solutions</p>
@@ -477,8 +477,8 @@
                     </div>
                     <div class="extra">
                       <div class="ui orange horizontal label">Revising</div>
-                      <div class="ui right floated primary button">
-                        Update
+                      <div class="ui right floated primary button feedback">
+                        Feedback
                       </div>
                     </div>
                   </div>
@@ -492,7 +492,7 @@
                       Content C
                     </div>
                     <div class="meta">
-                      Submitted: 2020-12-05 12:01 
+                      <span>3 days ago</span> <a>You</a>
                     </div>
                     <div class="description">
                       <p>A document for research</p>
@@ -506,7 +506,7 @@
                   </div>
                 </div>
                 <div class="item">
-                  <a id="task"><i class="plus icon"></i> Upload File</a>
+                  <a class="update"><i class="plus icon"></i> Upload File</a>
                 </div>
               </div>
             </div>
@@ -521,14 +521,14 @@
                       Content A
                     </div>
                     <div class="meta">
-                      Submitted: 2020-12-05 12:01 
+                      <span>3 days ago</span> <a>You</a> 
                     </div>
                     <div class="description">
                       <p>A document planning workflow</p>
                     </div>
                     <div class="extra">
                       <div class="ui yellow horizontal label">First Submission</div>
-                      <div class="ui right floated primary button">
+                      <div class="ui right floated primary button update">
                         Update
                       </div>
                     </div>
@@ -543,7 +543,7 @@
                       Content B
                     </div>
                     <div class="meta">
-                      Submitted: 2020-12-05 12:01 
+                      <span>3 days ago</span> <a>You</a>
                     </div>
                     <div class="description">
                       <p>A document planning solutions</p>
@@ -566,22 +566,118 @@
                       Content C
                     </div>
                     <div class="meta">
-                      Submitted: 2020-12-05 12:01 
+                      <span>3 days ago</span> <a>Bakugo</a>
                     </div>
                     <div class="description">
                       <p>A document for research</p>
                     </div>
                     <div class="extra">
                       <div class="ui green horizontal label">Final</div>
-                      <div class="ui right floated disabled primary button">
+                      <div class="ui right floated disabled primary button update">
                         Update
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="ui modal" id="feedback-modal">
+                    <div class="header">Feedback</div>
+                    <div class="content">
+                      <div class="description">
+                        <form class="ui form">
+                          
+                          <h5>Document Link</h5>
+                          <div class="ui segments">
+                            <div class="ui segment">
+                              <a href="https://docs.google.com/document/u/0/?pli=1&tgif=d">https://docs.google.com/document/u/0/?pli=1&tgif=d</a>
+                            </div>
+                          </div>
+                          
+    
+                          <div class="field">
+                            <label>Your feedback</label>
+                            <textarea></textarea>
+                          </div>
+    
+                        </form>
+                      </div>
+                    </div>
+                    <div class="actions">
+                      <div class="ui black deny button">
+                        Cancel
+                      </div>
+                      <div class="ui positive right labeled icon button">
+                        Send
+                        <i class="paper plane icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui modal" id="update-modal">
+                    <div class="header">Update</div>
+                    <div class="content">
+                      <div class="description">
+                        <form class="ui form">
+                          <div class="field">
+                            <label>Link</label>
+                            <div class="ui labeled input">
+                              <div class="ui label">
+                                http://
+                              </div>
+                              <input type="text" placeholder="docs.google.com">
+                            </div>
+                          </div>
+    
+                          <div class="field">
+                            <label>Upload File</label>
+                            <div class="ui primary button"><i class="upload icon"></i> Upload File</div>
+                          </div>
+    
+                        </form>
+                      </div>
+                    </div>
+                    <div class="actions">
+                      <div class="ui black deny button">
+                        Cancel
+                      </div>
+                      <div class="ui positive right labeled icon button">
+                        
+                        <i class="checkmark icon"></i>Save
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ui modal" id="minutes-modal">
+                    <div class="header">
+                      Minutes 2020-12-09
+                    </div>
+                    <div class="content">
+                      <div class="description">
+                        <form class="ui form">
+                          <div class="field">
+                            <label>Session Summary</label>
+                            <input type="text" placeholder="Short Summary">
+                          </div>
+    
+                          <div class="field">
+                            <label>Session Detail</label>
+                            <textarea></textarea>
+                          </div>
+    
+                        </form>
+                      </div>
+                    </div>
+                    <div class="actions">
+                      <div class="ui black deny button">
+                        Cancel
+                      </div>
+                      <div class="ui positive right labeled icon button">
+                        Save
+                        <i class="checkmark icon"></i>
                       </div>
                     </div>
                   </div>
                   
           </div>
           <div class="item">
-            <a id="task"><i class="plus icon"></i> Upload File</a>
+            <a class="update"><i class="plus icon"></i> Upload File</a>
           </div>
           
           
