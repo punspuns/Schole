@@ -23,6 +23,7 @@ $(document).ready(function () {
    $('#task').click(function () {
       $('#add-task').modal('show')
    })
-   $('.tabular.menu .item').tab();
+   $('.tabular.menu .item.task-tab').tab();
+   $('.tabular.menu .item.box-tab').tab();
    $('.ui.dropdown').dropdown();
 });
