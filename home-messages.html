@@ -46,9 +46,9 @@
         </a>
           <a class="item" href="./home-summary.html"><i class="left home icon"></i>Summary</a>
           <a class="item" href="./home-mytask.html"><i class="left tasks icon"></i>My Tasks</a>
-          <a class="active item" href="./home-messages.html"><i class="left envelope icon"></i>Feedback</a>
+          <a class="active item" href="./home-messages.html"><i class="left comment icon"></i>Feedback</a>
           <div class="ui hidden divider"></div>
-          <a id="out" class="item"><i class="left sign out alternate icon"></i>Sign Out</a>
+          <a href="./index.html" id="out" class="item"><i class="left sign out alternate icon"></i>Sign Out</a>
         </div>
       </div>
       <div class="thirteen wide tablet eight wide computer column" id="content">
@@ -60,23 +60,56 @@
           <div class="ui segment">
           <!-- Submission -->
           
-          <div class="ui divided link items">
-            <a class="item" target="_blank" id="feedback" style="background-color: #F5F5F5; border-radius: 10px;">
-              <div class="content" style="align-self:center">
-                <div class="header">Digitalize Wireframe</div>
+          <div class="ui divided items">
+            <div class="item">
+              <div class="ui mini image">
+                <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PGcgaWQ9IkRvY3NfM18iPjxnPjxnPjxnPjxnPjxwYXRoIGQ9Im00NTEgMTM1LTEwNS0zMC0zMC0xMDVoLTIxMGMtMjQuODUzIDAtNDUgMjAuMTQ3LTQ1IDQ1djQyMmMwIDI0Ljg1MyAyMC4xNDcgNDUgNDUgNDVoMzAwYzI0Ljg1MyAwIDQ1LTIwLjE0NyA0NS00NXoiIGZpbGw9IiM0MDg2ZjQiLz48L2c+PC9nPjwvZz48L2c+PHBhdGggZD0ibTQ1MSAxMzV2MzMyYzAgMjQuODUzLTIwLjE0NyA0NS00NSA0NWgtMTUwdi01MTJoNjBsMzAgMTA1eiIgZmlsbD0iIzQxNzVkZiIvPjxwYXRoIGQ9Im00NTEgMTM1aC0xMDVjLTE2LjUgMC0zMC0xMy41LTMwLTMwdi0xMDVjMy45IDAgNy44IDEuNSAxMC40OTkgNC41MDFsMTIwIDEyMGMzLjAwMSAyLjY5OSA0LjUwMSA2LjU5OSA0LjUwMSAxMC40OTl6IiBmaWxsPSIjODBhZWY4Ii8+PGc+PHBhdGggZD0ibTM0NiAyNDFoLTE4MGMtOC4yOTEgMC0xNS02LjcwOS0xNS0xNXM2LjcwOS0xNSAxNS0xNWgxODBjOC4yOTEgMCAxNSA2LjcwOSAxNSAxNXMtNi43MDkgMTUtMTUgMTV6IiBmaWxsPSIjZmZmNWY1Ii8+PC9nPjxnPjxwYXRoIGQ9Im0zNDYgMzAxaC0xODBjLTguMjkxIDAtMTUtNi43MDktMTUtMTVzNi43MDktMTUgMTUtMTVoMTgwYzguMjkxIDAgMTUgNi43MDkgMTUgMTVzLTYuNzA5IDE1LTE1IDE1eiIgZmlsbD0iI2ZmZjVmNSIvPjwvZz48Zz48cGF0aCBkPSJtMzQ2IDM2MWgtMTgwYy04LjI5MSAwLTE1LTYuNzA5LTE1LTE1czYuNzA5LTE1IDE1LTE1aDE4MGM4LjI5MSAwIDE1IDYuNzA5IDE1IDE1cy02LjcwOSAxNS0xNSAxNXoiIGZpbGw9IiNmZmY1ZjUiLz48L2c+PGc+PHBhdGggZD0ibTI4NiA0MjFoLTEyMGMtOC4yOTEgMC0xNS02LjcwOS0xNS0xNXM2LjcwOS0xNSAxNS0xNWgxMjBjOC4yOTEgMCAxNSA2LjcwOSAxNSAxNXMtNi43MDkgMTUtMTUgMTV6IiBmaWxsPSIjZmZmNWY1Ii8+PC9nPjwvZz48ZyBpZD0iRG9jc180XyI+PGc+PGc+PHBhdGggZD0ibTI1NiA0MjFoMzBjOC4yOTEgMCAxNS02LjcwOSAxNS0xNXMtNi43MDktMTUtMTUtMTVoLTMweiIgZmlsbD0iI2UzZTdlYSIvPjwvZz48Zz48cGF0aCBkPSJtMjU2IDM2MWg5MGM4LjI5MSAwIDE1LTYuNzA5IDE1LTE1cy02LjcwOS0xNS0xNS0xNWgtOTB6IiBmaWxsPSIjZTNlN2VhIi8+PC9nPjxnPjxwYXRoIGQ9Im0yNTYgMzAxaDkwYzguMjkxIDAgMTUtNi43MDkgMTUtMTVzLTYuNzA5LTE1LTE1LTE1aC05MHoiIGZpbGw9IiNlM2U3ZWEiLz48L2c+PGc+PHBhdGggZD0ibTI1NiAyNDFoOTBjOC4yOTEgMCAxNS02LjcwOSAxNS0xNXMtNi43MDktMTUtMTUtMTVoLTkweiIgZmlsbD0iI2UzZTdlYSIvPjwvZz48L2c+PC9nPjwvZz48L3N2Zz4=" />
+              </div>
+              <div class="middle aligned content">
+                <a class="header" style="color: #0E6EB8;">
+                  Content A
+                </a>
+                <div class="meta">
+                  <span>3 days ago</span>
+                </div>
                 <div class="description">
-                  <p>Digitalize sketches and submit the XD version</p>
+                  <p>A document planning workflow</p>
                 </div>
               </div>
-            </a>
-            <a class="item" target="_blank" id="feedback">
-              <div class="content">
-                <div class="header">Sketch Wireframe</div>
+            </div>
+            <div class="item">
+              <div class="ui mini image">
+                <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PGcgaWQ9IkRvY3NfM18iPjxnPjxnPjxnPjxnPjxwYXRoIGQ9Im00NTEgMTM1LTEwNS0zMC0zMC0xMDVoLTIxMGMtMjQuODUzIDAtNDUgMjAuMTQ3LTQ1IDQ1djQyMmMwIDI0Ljg1MyAyMC4xNDcgNDUgNDUgNDVoMzAwYzI0Ljg1MyAwIDQ1LTIwLjE0NyA0NS00NXoiIGZpbGw9IiM0MDg2ZjQiLz48L2c+PC9nPjwvZz48L2c+PHBhdGggZD0ibTQ1MSAxMzV2MzMyYzAgMjQuODUzLTIwLjE0NyA0NS00NSA0NWgtMTUwdi01MTJoNjBsMzAgMTA1eiIgZmlsbD0iIzQxNzVkZiIvPjxwYXRoIGQ9Im00NTEgMTM1aC0xMDVjLTE2LjUgMC0zMC0xMy41LTMwLTMwdi0xMDVjMy45IDAgNy44IDEuNSAxMC40OTkgNC41MDFsMTIwIDEyMGMzLjAwMSAyLjY5OSA0LjUwMSA2LjU5OSA0LjUwMSAxMC40OTl6IiBmaWxsPSIjODBhZWY4Ii8+PGc+PHBhdGggZD0ibTM0NiAyNDFoLTE4MGMtOC4yOTEgMC0xNS02LjcwOS0xNS0xNXM2LjcwOS0xNSAxNS0xNWgxODBjOC4yOTEgMCAxNSA2LjcwOSAxNSAxNXMtNi43MDkgMTUtMTUgMTV6IiBmaWxsPSIjZmZmNWY1Ii8+PC9nPjxnPjxwYXRoIGQ9Im0zNDYgMzAxaC0xODBjLTguMjkxIDAtMTUtNi43MDktMTUtMTVzNi43MDktMTUgMTUtMTVoMTgwYzguMjkxIDAgMTUgNi43MDkgMTUgMTVzLTYuNzA5IDE1LTE1IDE1eiIgZmlsbD0iI2ZmZjVmNSIvPjwvZz48Zz48cGF0aCBkPSJtMzQ2IDM2MWgtMTgwYy04LjI5MSAwLTE1LTYuNzA5LTE1LTE1czYuNzA5LTE1IDE1LTE1aDE4MGM4LjI5MSAwIDE1IDYuNzA5IDE1IDE1cy02LjcwOSAxNS0xNSAxNXoiIGZpbGw9IiNmZmY1ZjUiLz48L2c+PGc+PHBhdGggZD0ibTI4NiA0MjFoLTEyMGMtOC4yOTEgMC0xNS02LjcwOS0xNS0xNXM2LjcwOS0xNSAxNS0xNWgxMjBjOC4yOTEgMCAxNSA2LjcwOSAxNSAxNXMtNi43MDkgMTUtMTUgMTV6IiBmaWxsPSIjZmZmNWY1Ii8+PC9nPjwvZz48ZyBpZD0iRG9jc180XyI+PGc+PGc+PHBhdGggZD0ibTI1NiA0MjFoMzBjOC4yOTEgMCAxNS02LjcwOSAxNS0xNXMtNi43MDktMTUtMTUtMTVoLTMweiIgZmlsbD0iI2UzZTdlYSIvPjwvZz48Zz48cGF0aCBkPSJtMjU2IDM2MWg5MGM4LjI5MSAwIDE1LTYuNzA5IDE1LTE1cy02LjcwOS0xNS0xNS0xNWgtOTB6IiBmaWxsPSIjZTNlN2VhIi8+PC9nPjxnPjxwYXRoIGQ9Im0yNTYgMzAxaDkwYzguMjkxIDAgMTUtNi43MDkgMTUtMTVzLTYuNzA5LTE1LTE1LTE1aC05MHoiIGZpbGw9IiNlM2U3ZWEiLz48L2c+PGc+PHBhdGggZD0ibTI1NiAyNDFoOTBjOC4yOTEgMCAxNS02LjcwOSAxNS0xNXMtNi43MDktMTUtMTUtMTVoLTkweiIgZmlsbD0iI2UzZTdlYSIvPjwvZz48L2c+PC9nPjwvZz48L3N2Zz4=" />
+              </div>
+              <div class="middle aligned content">
+                <a class="header">
+                  Content B
+                </a>
+                <div class="meta">
+                  <span>3 days ago</span> 
+                </div>
                 <div class="description">
-                  <p>Sketch full screens of phones on the paper then submit in PDF</p>
+                  <p>A document planning solutions</p>
+                  
                 </div>
               </div>
-            </a>
+            </div>
+            <div class="item">
+              <div class="ui mini image">
+                <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PGcgaWQ9IkRvY3NfM18iPjxnPjxnPjxnPjxnPjxwYXRoIGQ9Im00NTEgMTM1LTEwNS0zMC0zMC0xMDVoLTIxMGMtMjQuODUzIDAtNDUgMjAuMTQ3LTQ1IDQ1djQyMmMwIDI0Ljg1MyAyMC4xNDcgNDUgNDUgNDVoMzAwYzI0Ljg1MyAwIDQ1LTIwLjE0NyA0NS00NXoiIGZpbGw9IiM0MDg2ZjQiLz48L2c+PC9nPjwvZz48L2c+PHBhdGggZD0ibTQ1MSAxMzV2MzMyYzAgMjQuODUzLTIwLjE0NyA0NS00NSA0NWgtMTUwdi01MTJoNjBsMzAgMTA1eiIgZmlsbD0iIzQxNzVkZiIvPjxwYXRoIGQ9Im00NTEgMTM1aC0xMDVjLTE2LjUgMC0zMC0xMy41LTMwLTMwdi0xMDVjMy45IDAgNy44IDEuNSAxMC40OTkgNC41MDFsMTIwIDEyMGMzLjAwMSAyLjY5OSA0LjUwMSA2LjU5OSA0LjUwMSAxMC40OTl6IiBmaWxsPSIjODBhZWY4Ii8+PGc+PHBhdGggZD0ibTM0NiAyNDFoLTE4MGMtOC4yOTEgMC0xNS02LjcwOS0xNS0xNXM2LjcwOS0xNSAxNS0xNWgxODBjOC4yOTEgMCAxNSA2LjcwOSAxNSAxNXMtNi43MDkgMTUtMTUgMTV6IiBmaWxsPSIjZmZmNWY1Ii8+PC9nPjxnPjxwYXRoIGQ9Im0zNDYgMzAxaC0xODBjLTguMjkxIDAtMTUtNi43MDktMTUtMTVzNi43MDktMTUgMTUtMTVoMTgwYzguMjkxIDAgMTUgNi43MDkgMTUgMTVzLTYuNzA5IDE1LTE1IDE1eiIgZmlsbD0iI2ZmZjVmNSIvPjwvZz48Zz48cGF0aCBkPSJtMzQ2IDM2MWgtMTgwYy04LjI5MSAwLTE1LTYuNzA5LTE1LTE1czYuNzA5LTE1IDE1LTE1aDE4MGM4LjI5MSAwIDE1IDYuNzA5IDE1IDE1cy02LjcwOSAxNS0xNSAxNXoiIGZpbGw9IiNmZmY1ZjUiLz48L2c+PGc+PHBhdGggZD0ibTI4NiA0MjFoLTEyMGMtOC4yOTEgMC0xNS02LjcwOS0xNS0xNXM2LjcwOS0xNSAxNS0xNWgxMjBjOC4yOTEgMCAxNSA2LjcwOSAxNSAxNXMtNi43MDkgMTUtMTUgMTV6IiBmaWxsPSIjZmZmNWY1Ii8+PC9nPjwvZz48ZyBpZD0iRG9jc180XyI+PGc+PGc+PHBhdGggZD0ibTI1NiA0MjFoMzBjOC4yOTEgMCAxNS02LjcwOSAxNS0xNXMtNi43MDktMTUtMTUtMTVoLTMweiIgZmlsbD0iI2UzZTdlYSIvPjwvZz48Zz48cGF0aCBkPSJtMjU2IDM2MWg5MGM4LjI5MSAwIDE1LTYuNzA5IDE1LTE1cy02LjcwOS0xNS0xNS0xNWgtOTB6IiBmaWxsPSIjZTNlN2VhIi8+PC9nPjxnPjxwYXRoIGQ9Im0yNTYgMzAxaDkwYzguMjkxIDAgMTUtNi43MDkgMTUtMTVzLTYuNzA5LTE1LTE1LTE1aC05MHoiIGZpbGw9IiNlM2U3ZWEiLz48L2c+PGc+PHBhdGggZD0ibTI1NiAyNDFoOTBjOC4yOTEgMCAxNS02LjcwOSAxNS0xNXMtNi43MDktMTUtMTUtMTVoLTkweiIgZmlsbD0iI2UzZTdlYSIvPjwvZz48L2c+PC9nPjwvZz48L3N2Zz4=" />
+              </div>
+              <div class="middle aligned content">
+                <a class="header">
+                  Content C
+                </a>
+                <div class="meta">
+                  <span>3 days ago</span>
+                </div>
+                <div class="description">
+                  <p>A document for research</p>
+                </div>
+              </div>
+            </div>
           </div>
           
         </div>
