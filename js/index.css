@@ -72,3 +72,9 @@
     background-color: #F5F5F5;
     
   }
+
+  @media screen and (min-width: 990px) {
+    #menu-icon {
+      display: none;
+    }
+  }

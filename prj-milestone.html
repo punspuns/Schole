@@ -18,6 +18,16 @@
 <body>
     <div class="ui tablet computer only padded grid">
         <div class="ui borderless top fixed fluid menu">
+            <div class="ui dropdown icon item" id="menu-icon">
+                <i class="bars icon"></i>
+                <div class="menu">
+                    <a class="item" href="./prj-timeline.html"><i class="left stream icon"></i>Timeline</a>
+                    <a class="active item" href="./prj-milestone.html"><i class="left tasks icon"></i>Milestone</a>
+                    <a class="item" href="./prj-board.html"><i class="left columns icon"></i>Board</a>
+                  <div class="divider"></div>
+                  <a class="item out"><i class="left sign out alternate icon"></i>Sign Out</a>
+                </div>
+              </div>
             <a class="header item">
                 S C H O L E
             </a>
@@ -33,7 +43,7 @@
 
     <div class="ui padded grid">
         <div class="row">
-            <div class="three wide tablet only two wide computer only column" id="sidebar">
+            <div class="two wide computer only column" id="sidebar">
                 <div class="ui vertical borderless fluid text menu">
                     <a class="ui image header" id="avatar">
                         <img src="./img/deku.jpg" class="ui mini rounded image">
@@ -46,10 +56,10 @@
                     <a class="active item" href="./prj-milestone.html"><i class="left tasks icon"></i>Milestone</a>
                     <a class="item" href="./prj-board.html"><i class="left columns icon"></i>Board</a>
                     <div class="ui hidden divider"></div>
-                    <a href="./index.html" id="out" class="item"><i class="left sign out alternate icon"></i>Sign Out</a>
+                    <a class="item out"><i class="left sign out alternate icon"></i>Sign Out</a>
                 </div>
             </div>
-            <div class="thirteen wide tablet nine wide computer column" id="content">
+            <div class="fourteen wide tablet nine wide computer column" id="content">
                 <!-- Breadcrumb -->
                 <div class="padded row">
                     <div class="ui breadcrumb">
@@ -291,7 +301,7 @@
         <div class="center aligned header">Sign Out?</div>
         <div class="center aligned actions">
             <div class="ui secondary button">Cancel</div>
-            <a href="../log-in.html" class="ui negative button">Sign Out</a>
+            <a href="./index.html" class="ui negative button">Sign Out</a>
         </div>
       </div>
 

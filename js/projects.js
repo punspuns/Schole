@@ -32,7 +32,7 @@ $(document).ready(function () {
    $('.minutes').click(function () {
       $('#minutes-modal').modal('show')
    });
-   $('#out').click(function () {
+   $('.out').click(function () {
       $('#sign-out').modal('show')
    });
    $('.tabular.menu .item.task-tab').tab();
