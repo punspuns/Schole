@@ -3,12 +3,12 @@ $(document).ready(function() {
         initialDate: new Date('2020-12-1'),
         eventDates: [{
            date: new Date('2020-12-24'),
-           message: 'Design Exercise IIB',
-           class: 'inverted yellow'
+           message: 'Show me in light purple',
+           class: 'inverted purple'
         }, {
            date: new Date('2020-12-27'),
-           message: 'Design Practice II',
-           class: 'inverted yellow'
+           message: 'Show me in green',
+           class: 'green'
         }]
      });
     $('#example1').progress();

@@ -14,23 +14,23 @@
   padding-right: 0;
 }
 
-#sidebar .ui.menu > a.item {
+#sidebar .ui.menu>a.item {
   padding: 10px 20px;
   line-height: 20px;
-  color: #272727;
+  color: #337ab7;
   border-radius: 0 !important;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-#sidebar .ui.menu > a.item.active {
-  background-color: #FFD700;
-  color: #23527c;
+#sidebar .ui.menu>a.item.active {
+  background-color: #337ab7;
+  color: white;
   border: none !important;
 }
 
-#sidebar .ui.menu > a.item:hover {
-  background-color: #ecc901;
+#sidebar .ui.menu>a.item:hover {
+  background-color: #eee;
   color: #23527c;
 }
 
