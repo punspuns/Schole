@@ -15,20 +15,20 @@
   #sidebar .ui.menu > a.item {
     padding: 10px 20px;
     line-height: 20px;
-    color: #337ab7;
+    color: #272727;
     border-radius: 0 !important;
     margin-top: 0;
     margin-bottom: 0;
   }
 
   #sidebar .ui.menu > a.item.active {
-    background-color: #337ab7;
-    color: white;
+    background-color: #FFD700;
+    color: #23527c;
     border: none !important;
   }
 
   #sidebar .ui.menu > a.item:hover {
-    background-color: #eee;
+    background-color: #ecc901;
     color: #23527c;
   }
 
