@@ -3,11 +3,11 @@ $(document).ready(function() {
         initialDate: new Date('2020-12-1'),
         eventDates: [{
            date: new Date('2020-12-24'),
-           message: 'Show me in light purple',
+           message: 'Design Exercise IIB',
            class: 'inverted purple'
         }, {
            date: new Date('2020-12-27'),
-           message: 'Show me in green',
+           message: 'Design Practice IIB',
            class: 'green'
         }]
      });
