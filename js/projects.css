@@ -109,4 +109,34 @@
   #menu-icon {
     display: none;
   }
+  
+}
+
+@media screen and (max-width: 768px) {
+  
+  .ui.cards#phases {
+    display: inline-block;
+    margin-left: 10px;
+    width: 250px;
+  }
+
+  .ui.items:not(.unstackable)>.item>.image, .ui.items:not(.unstackable)>.item>.image>img {
+    display: none;
+
+  }
+
+  .ui.items:not(.unstackable)>.item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    margin: 2em 0;
+}
+.ui.divided.items>.item {
+  border-top: 1px solid rgba(34,36,38,.15);
+  margin: 0;
+}
+
+.ui.ui.ui.ui.table:not(.unstackable)>thead>tr {
+  display: none!important;
+}
 }
