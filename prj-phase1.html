@@ -428,10 +428,10 @@
             <div class="ui tab" data-tab="minutes">
               <div class="ui placeholder segment">
                 <div class="ui icon header">
-                  <i class="pdf file outline icon"></i>
+                  <i class="file outline icon"></i>
                   No documents are listed.
                 </div>
-                <div class="ui primary button">Add Minutes</div>
+                <div class="ui primary button minutes">Add Minutes</div>
               </div>
             </div>
             <div class="ui tab" data-tab="document">
@@ -507,7 +507,7 @@
                   </div>
                 </div>
                 <div class="item">
-                  <a id="task"><i class="plus icon"></i> Upload File</a>
+                  <a class="update"><i class="plus icon"></i> Upload File</a>
                 </div>
               </div>
             </div>
@@ -585,7 +585,7 @@
   
                 </div>
                 <div class="item">
-                  <a id="task"><i class="plus icon"></i> Upload File</a>
+                  <a class="update"><i class="plus icon"></i> Upload File</a>
                 </div>
   
   
@@ -612,10 +612,10 @@
           <div class="ui tab" data-tab="minutes">
             <div class="ui placeholder segment">
               <div class="ui icon header">
-                <i class="pdf file outline icon"></i>
+                <i class="file outline icon"></i>
                 No documents are listed.
               </div>
-              <div class="ui primary button">Add Minutes</div>
+              <div class="ui primary button minutes">Add Minutes</div>
             </div>
           </div>
           <div class="ui tab" data-tab="document">
@@ -691,7 +691,7 @@
                 </div>
               </div>
               <div class="item">
-                <a id="task"><i class="plus icon"></i> Upload File</a>
+                <a class="update"><i class="plus icon"></i> Upload File</a>
               </div>
             </div>
           </div>
@@ -769,7 +769,7 @@
 
               </div>
               <div class="item">
-                <a id="task"><i class="plus icon"></i> Upload File</a>
+                <a class="update"><i class="plus icon"></i> Upload File</a>
               </div>
 
 
@@ -783,6 +783,71 @@
         </div>
       </div>
 
+      <div class="ui modal" id="minutes-modal">
+        <div class="header">
+          Minutes 2020-12-09
+        </div>
+        <div class="content">
+          <div class="description">
+            <form class="ui form">
+              <div class="field">
+                <label>Session Summary</label>
+                <input type="text" placeholder="Short Summary">
+              </div>
+
+              <div class="field">
+                <label>Session Detail</label>
+                <textarea></textarea>
+              </div>
+
+            </form>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="ui black deny button">
+            Cancel
+          </div>
+          <div class="ui positive right labeled icon button">
+            Save
+            <i class="checkmark icon"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui modal" id="update-modal">
+        <div class="header">Update</div>
+        <div class="content">
+          <div class="description">
+            <form class="ui form">
+              <div class="field">
+                <label>Link</label>
+                <div class="ui labeled input">
+                  <div class="ui label">
+                    http://
+                  </div>
+                  <input type="text" placeholder="docs.google.com">
+                </div>
+              </div>
+
+              <div class="field">
+                <label>Upload File</label>
+                <div class="ui primary button"><i class="upload icon"></i> Upload File</div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="ui black deny button">
+            Cancel
+          </div>
+          <div class="ui positive right labeled icon button">
+
+            <i class="checkmark icon"></i>Save
+          </div>
+        </div>
+      </div>
+
       <div class="ui modal" id="sign-out" style="width: fit-content;">
         <div class="center aligned header">Sign Out?</div>
         <div class="center aligned actions">
@@ -790,6 +855,8 @@
           <a href="../index.html" class="ui negative button">Sign Out</a>
         </div>
       </div>
+
+
 
 </body>
 
